@@ -1,3 +1,14 @@
+export const profile = {
+  name: 'Saman Sunasara',
+  title: 'AI/ML Engineer · Full-Stack Developer',
+  email: 'samansunasara5@gmail.com',
+  phone: '+91 9313882776',
+  education: 'B.Tech CSE (AI), Parul University, 6th Semester',
+  resumePath: '/Saman-Sunasara-Resume.docx',
+  objective:
+    'Motivated B.Tech CSE (AI) student with hands-on expertise in AI/ML and full-stack development, focused on building real-world systems that are technically strong and practically useful.',
+}
+
 export const socialLinks = [
   {
     label: 'GitHub',
@@ -10,18 +21,28 @@ export const socialLinks = [
 ]
 
 export const skills = [
+  'Python',
+  'JavaScript',
+  'React.js',
+  'Node.js',
   'TensorFlow',
   'PyTorch',
-  'React',
-  'Tailwind CSS',
-  'Node.js',
-  'Computer Vision',
-  'LSTM Modeling',
-  'Federated Learning',
-  'Framer Motion',
-  'Three.js',
   'OpenCV',
-  'API Design',
+  'MongoDB',
+  'REST APIs',
+  'Federated Learning',
+  'Django',
+  'Git & GitHub',
+  'CUDA',
+  'OpenMP',
+]
+
+export const certifications = [
+  'Machine Learning Specialization — Andrew Ng',
+  'Deep Learning Specialization — DeepLearning.AI',
+  'Python for Everybody — University of Michigan',
+  'Responsive Web Design — freeCodeCamp',
+  'HPC — MPI, OpenMP, CUDA, Parallel Computing',
 ]
 
 export const projects = [
@@ -29,33 +50,33 @@ export const projects = [
     title: 'Federated Learning System',
     stats: '92% accuracy',
     description:
-      'A privacy-first distributed learning platform that trains models across decentralized nodes without centralizing raw data.',
-    tech: ['TensorFlow', 'Federated Learning', 'Python', 'Model Aggregation'],
-    accent: 'from-cyan-400/25 via-transparent to-violet-500/20',
+      'A distributed training framework that lets multiple clients learn a shared model without exposing raw data, built for privacy-sensitive AI use cases.',
+    tech: ['TensorFlow', 'Federated Learning', 'Python', 'FedAvg'],
+    accent: 'from-cyan-400/20 via-transparent to-sky-500/15',
   },
   {
     title: 'Emotion Detection',
-    stats: 'CNN + OpenCV',
+    stats: '85% validation accuracy',
     description:
-      'A real-time emotion recognition engine that fuses convolutional inference with responsive webcam-based computer vision.',
-    tech: ['CNN', 'OpenCV', 'Deep Learning', 'Computer Vision'],
-    accent: 'from-rose-400/25 via-transparent to-cyan-500/20',
+      'A real-time facial emotion recognition system using CNN-based inference and OpenCV, with timeline logging for behavioural analysis.',
+    tech: ['CNN', 'OpenCV', 'Deep Learning', 'FER-2013'],
+    accent: 'from-amber-400/18 via-transparent to-cyan-500/16',
   },
   {
     title: 'Stock Prediction',
-    stats: 'LSTM Forecasting',
+    stats: '18% error reduction',
     description:
-      'A predictive analytics workflow for market trend estimation using LSTM networks and feature-rich time-series pipelines.',
-    tech: ['LSTM', 'Time Series', 'Data Science', 'Forecasting'],
-    accent: 'from-emerald-400/25 via-transparent to-cyan-500/20',
+      'An LSTM forecasting pipeline that uses market indicators like RSI, MACD, and moving averages to improve prediction quality.',
+    tech: ['LSTM', 'Scikit-learn', 'Pandas', 'Matplotlib'],
+    accent: 'from-emerald-400/18 via-transparent to-teal-500/16',
   },
   {
     title: 'Website Builder SaaS',
-    stats: 'React + Node.js',
+    stats: 'Multi-client architecture',
     description:
-      'A production-ready SaaS product for generating premium websites with reusable blocks, scalable APIs, and conversion-focused UX.',
-    tech: ['React', 'Node.js', 'SaaS', 'Design Systems'],
-    accent: 'from-violet-400/25 via-transparent to-rose-500/20',
+      'A full-stack website builder with custom domains, JWT auth, and reusable publishing workflows built for real client delivery.',
+    tech: ['React', 'Node.js', 'MongoDB', 'REST API'],
+    accent: 'from-indigo-400/20 via-transparent to-rose-500/16',
   },
 ]
 

@@ -9,11 +9,13 @@ import { Loader } from './components/Loader'
 import { Navbar } from './components/Navbar'
 import { Projects } from './components/Projects'
 import { Skills } from './components/Skills'
+import { useClickSound } from './hooks/useClickSound'
 
 const Chatbot = lazy(() => import('./components/Chatbot').then((module) => ({ default: module.Chatbot })))
 
 function App() {
   const [loading, setLoading] = useState(true)
+  useClickSound()
 
   useEffect(() => {
     const timeout = window.setTimeout(() => setLoading(false), 1450)

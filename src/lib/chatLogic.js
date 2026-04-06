@@ -1,31 +1,31 @@
 const knowledge = {
   about:
-    "Saman Sunasara is an AI/ML Engineer and Full-Stack Developer who enjoys turning complex systems into experiences that feel clear, polished, and useful. His work blends machine learning, modern frontend craft, and product thinking.",
+    "Saman Sunasara is a B.Tech CSE (AI) student at Parul University with strong hands-on work in AI/ML and full-stack development. He focuses on building practical systems that connect strong engineering with real-world usefulness.",
   skills:
-    "Saman works across TensorFlow, deep learning, CNNs, LSTMs, React, Tailwind CSS, Node.js, Three.js, Framer Motion, OpenCV, API design, and full-stack product development.",
+    "Saman works across Python, JavaScript, React.js, Node.js, TensorFlow, PyTorch, OpenCV, MongoDB, Django, REST APIs, federated learning, and GPU-oriented tools like CUDA and OpenMP.",
   contact:
-    "You can reach Saman at samansunasara5@gmail.com. He is open to collaborations around AI products, modern web experiences, and full-stack development.",
+    "You can reach Saman at samansunasara5@gmail.com or on LinkedIn. He is open to internships, collaborations, and product-focused engineering work.",
   experience:
-    "Saman's portfolio reflects strong hands-on experience across federated learning, computer vision, time-series forecasting, and full-stack SaaS product building. The common thread is shipping technically strong work with a premium user experience.",
+    "Saman's experience is strongly project-driven: federated learning, emotion tracking with computer vision, stock prediction with LSTMs, and full-stack website builder development with real client delivery experience.",
 }
 
 const projectDetails = {
   'federated learning system':
-    "The Federated Learning System is one of Saman's strongest AI projects. It focuses on privacy-first distributed training, uses TensorFlow, and reached 92% accuracy. It shows he can work on advanced ML systems that balance performance with practical deployment concerns.",
+    "The Federated Learning System uses TensorFlow and FedAvg aggregation across distributed clients to train a shared model without centralizing raw data. It reached around 92% accuracy on MNIST and reflects strong understanding of privacy-aware AI systems.",
   'emotion detection':
-    "Emotion Detection combines CNN-based modeling with OpenCV for real-time facial expression analysis. It highlights Saman's strengths in computer vision, responsive inference flows, and building applied AI that feels interactive.",
+    "Emotion Detection is a computer vision project built with CNNs and OpenCV for real-time facial emotion recognition. It handles live video input and tracks emotion changes over time, which makes it practical as well as technically interesting.",
   'stock prediction':
-    "The Stock Prediction project uses LSTM models for time-series forecasting. It reflects Saman's ability to work with sequential data, feature engineering, and predictive modeling in a way that can support real analytical products.",
+    "The Stock Prediction project uses LSTM-based forecasting with features like moving averages, RSI, and MACD. It shows Saman's ability to work with sequential data, feature engineering, and predictive modeling.",
   'website builder saas':
-    "The Website Builder SaaS shows Saman's full-stack product side. Built with React and Node.js, it focuses on reusable systems, scalable APIs, and polished UX, which makes it a strong example of engineering plus product craft.",
+    "The Website Builder project is a multi-client full-stack platform built with React, Node.js, MongoDB, and REST APIs. It highlights reusable architecture, client delivery, and product execution rather than just a demo-level build.",
 }
 
 const keywordGroups = {
   projects: ['project', 'projects', 'portfolio', 'work', 'built', 'build'],
   skills: ['skill', 'skills', 'stack', 'technology', 'technologies', 'tech'],
   about: ['about', 'who is', 'who are you', 'intro', 'background'],
-  contact: ['contact', 'email', 'reach', 'hire', 'connect'],
-  experience: ['experience', 'worked on', 'strength', 'strengths', 'resume'],
+  contact: ['contact', 'email', 'reach', 'hire', 'connect', 'linkedin'],
+  experience: ['experience', 'worked on', 'strength', 'strengths', 'resume', 'internship'],
 }
 
 function includesKeyword(input, keywords) {
@@ -44,7 +44,7 @@ export function getProjectExplanation(projectName) {
   const key = projectName.toLowerCase()
   return (
     projectDetails[key] ||
-    `${projectName} reflects Saman's ability to combine strong technical execution with polished product thinking.`
+    `${projectName} reflects Saman's ability to combine strong technical execution with practical product thinking.`
   )
 }
 
@@ -55,48 +55,48 @@ export function getChatReply(userInput) {
   if (projectMatch) {
     return humanize(
       projectMatch[1],
-      "If you'd like, I can also compare it with another project from the portfolio.",
+      "If you want, I can also summarize what that project says about Saman's strengths.",
     )
   }
 
   if (includesKeyword(input, keywordGroups.projects)) {
     return humanize(
-      "Saman's standout projects include a Federated Learning System with 92% accuracy, a real-time Emotion Detection system using CNNs and OpenCV, an LSTM-based Stock Prediction workflow, and a Website Builder SaaS built with React and Node.js.",
-      "Each one shows a different side of his work: AI systems, computer vision, forecasting, and product engineering.",
+      "Saman's main work includes a federated learning system, an emotion tracking system, an LSTM-based stock prediction project, and a full-stack website builder platform.",
+      "Together they show strength across AI systems, computer vision, forecasting, and full-stack product development.",
     )
   }
 
   if (includesKeyword(input, keywordGroups.skills)) {
     return humanize(
       knowledge.skills,
-      "The nice part is that he doesn't just know the tools, he uses them to build things that feel thoughtful and production-ready.",
+      "A big strength here is that the skills are backed by working projects, not just a tools list.",
     )
   }
 
   if (includesKeyword(input, keywordGroups.about)) {
     return humanize(
       knowledge.about,
-      "He is especially strong where machine learning and premium frontend execution meet.",
+      "He is especially focused on building systems that are technically solid and genuinely useful.",
     )
   }
 
   if (includesKeyword(input, keywordGroups.contact)) {
     return humanize(
       knowledge.contact,
-      "If you want, I can also suggest what kind of collaboration message would fit his profile best.",
+      "You can also download the resume directly from the portfolio.",
     )
   }
 
   if (includesKeyword(input, keywordGroups.experience)) {
     return humanize(
       knowledge.experience,
-      "A good short summary is: strong AI engineering instincts, modern frontend taste, and product-focused execution.",
+      "A concise summary would be: project-driven AI/ML and full-stack builder with strong self-learning momentum.",
     )
   }
 
   if (input.includes('hello') || input.includes('hi') || input.includes('hey')) {
-    return "Hi, happy to help. You can ask me about Saman's projects, skills, background, experience, or contact details."
+    return "Hi, happy to help. You can ask about Saman's projects, skills, background, experience, or resume."
   }
 
-  return "I can help you with projects, skills, background, or experience. Try asking something like 'Tell me about your projects' or 'What kind of work does Saman specialize in?'"
+  return "I can help with projects, skills, background, experience, or resume details. Try asking something like 'Tell me about your projects' or 'What kind of work does Saman specialize in?'"
 }
