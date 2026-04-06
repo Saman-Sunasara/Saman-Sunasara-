@@ -5,3 +5,4 @@ dist
 .DS_Store
 vite-dev.out.log
 vite-dev.err.log
+~$*.docx

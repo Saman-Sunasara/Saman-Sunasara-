@@ -11,8 +11,8 @@ export function Loader() {
       <div className="relative">
         <motion.div
           animate={{ rotate: 360 }}
-          transition={{ duration: 1.8, repeat: Infinity, ease: 'linear' }}
-          className="h-24 w-24 rounded-full border border-accent/20 border-t-accent"
+          transition={{ duration: 2.2, repeat: Infinity, ease: 'linear' }}
+          className="h-24 w-24 rounded-full border border-white/10 border-t-accent"
         />
         <div className="absolute inset-0 flex items-center justify-center font-display text-xs uppercase tracking-[0.4em] text-white">
           SS
