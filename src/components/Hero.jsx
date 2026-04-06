@@ -44,16 +44,8 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.25 }}
-            className="mt-8 max-w-2xl rounded-[1.75rem] border border-white/10 bg-white/5 p-5 text-sm leading-7 text-slate-300 shadow-glass backdrop-blur-2xl"
-          >
-            I build interfaces that feel cinematic, intelligent systems that feel useful, and products that feel ready for the real world.
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="mt-10 flex flex-wrap gap-4"
+            transition={{ duration: 0.8, delay: 0.28 }}
+            className="mt-8 flex flex-wrap gap-4"
           >
             <a
               href="#projects"
