@@ -9,6 +9,7 @@ import { Loader } from './components/Loader'
 import { Navbar } from './components/Navbar'
 import { Projects } from './components/Projects'
 import { Skills } from './components/Skills'
+import { WhyHireMe } from './components/WhyHireMe'
 import { useClickSound } from './hooks/useClickSound'
 
 const Chatbot = lazy(() => import('./components/Chatbot').then((module) => ({ default: module.Chatbot })))
@@ -36,6 +37,7 @@ function App() {
         >
           <Hero />
           <About />
+          <WhyHireMe />
           <Projects />
           <Skills />
           <Contact />

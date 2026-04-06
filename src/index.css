@@ -26,7 +26,7 @@ body {
   min-width: 320px;
   background:
     radial-gradient(circle at top, rgba(105, 240, 255, 0.08), transparent 28%),
-    radial-gradient(circle at 80% 10%, rgba(244, 114, 182, 0.06), transparent 22%),
+    radial-gradient(circle at 80% 10%, rgba(244, 114, 182, 0.05), transparent 22%),
     linear-gradient(180deg, #04070d 0%, #0a1320 100%);
   color: #f8fafc;
   overflow-x: hidden;
@@ -60,6 +60,11 @@ input {
 
 section {
   position: relative;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 @supports (scroll-behavior: smooth) {

@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion'
+import { Download } from 'lucide-react'
+import { profile } from '../data/portfolio'
 
 const links = [
   { label: 'About', href: '#about' },
+  { label: 'Why Hire Me', href: '#why-hire-me' },
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
   { label: 'Contact', href: '#contact' },
@@ -15,7 +18,7 @@ export function Navbar() {
       transition={{ duration: 0.7, ease: 'easeOut' }}
       className="sticky top-0 z-50 px-4 pt-4 sm:px-6"
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/10 bg-slate-950/50 px-5 py-3 shadow-[0_20px_60px_rgba(2,6,23,0.42)] backdrop-blur-3xl">
+      <div className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/10 bg-slate-950/55 px-5 py-3 shadow-[0_20px_60px_rgba(2,6,23,0.42)] backdrop-blur-3xl">
         <a href="#home" className="font-display text-sm uppercase tracking-[0.35em] text-white sm:text-base">
           Saman Sunasara
         </a>
@@ -31,10 +34,12 @@ export function Navbar() {
           ))}
         </nav>
         <a
-          href="#contact"
-          className="rounded-full border border-accent/30 bg-accent/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-accent shadow-[0_0_28px_rgba(105,240,255,0.12)] transition duration-300 hover:-translate-y-0.5 hover:border-accent/60 hover:bg-accent/20"
+          href={profile.resumePath}
+          download
+          className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-accent shadow-[0_0_28px_rgba(105,240,255,0.12)] transition duration-300 hover:-translate-y-0.5 hover:border-accent/60 hover:bg-accent/20"
         >
-          Let&apos;s Build
+          <Download size={14} />
+          Resume
         </a>
       </div>
     </motion.header>

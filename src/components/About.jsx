@@ -8,8 +8,8 @@ export function About() {
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="About"
-          title="A grounded builder with a strong bias toward real projects."
-          description="My work is centered on practical AI/ML systems and modern full-stack development, with an emphasis on building things that solve real problems and communicate clearly."
+          title="Built around practical AI, product thinking, and technical clarity."
+          description="I approach projects like an engineer first: understand the problem, design something robust, and make sure the final experience is useful for real people."
         />
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -25,7 +25,7 @@ export function About() {
               <p className="mt-6 text-base leading-8 text-slate-300">
                 I enjoy building across the full stack, but I am especially drawn to AI systems where privacy,
                 usability, and performance all matter at once. That includes federated learning, computer vision,
-                predictive modeling, and modern web apps that are cleanly engineered.
+                predictive modeling, and modern web applications that are cleanly engineered from the inside out.
               </p>
             </div>
             <div className="grid gap-4">

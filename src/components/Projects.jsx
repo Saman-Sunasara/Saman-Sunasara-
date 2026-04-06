@@ -25,8 +25,8 @@ export function Projects() {
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Projects"
-          title="Flagship builds shaped by AI, data, and product craft."
-          description="Each project blends technical depth with clean execution, from privacy-aware learning systems to predictive applications and polished full-stack SaaS products."
+          title="Selected Work"
+          description="A collection of projects focused on solving real-world problems through AI and scalable applications."
         />
         <div className="grid gap-7 lg:grid-cols-2">
           {projects.map((project, index) => (
