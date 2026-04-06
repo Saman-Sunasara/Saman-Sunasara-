@@ -8,8 +8,8 @@ export function Contact() {
       <div className="mx-auto max-w-5xl">
         <SectionHeading
           eyebrow="Contact"
-          title="Let’s turn ambitious ideas into something unforgettable."
-          description="For collaborations, product builds, AI systems, or modern web experiences, reach out and let’s create something that feels ahead of the curve."
+          title="Let's turn ambitious ideas into something unforgettable."
+          description="For collaborations, product builds, AI systems, or modern web experiences, reach out and let's create something that feels ahead of the curve."
         />
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -28,11 +28,14 @@ export function Contact() {
           >
             samansunasara5@gmail.com
           </a>
+          <p className="mt-4 text-sm leading-7 text-slate-300">
+            Resume download will be added here as soon as the file is available in the project workspace.
+          </p>
           <a
-            href="mailto:samansunasara5@gmail.com"
+            href="mailto:samansunasara5@gmail.com?subject=Resume%20Request"
             className="mt-8 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent to-violet px-6 py-3 text-sm font-semibold uppercase tracking-[0.28em] text-slate-950"
           >
-            Start a Conversation
+            Request Resume
             <Send size={16} />
           </a>
         </motion.div>

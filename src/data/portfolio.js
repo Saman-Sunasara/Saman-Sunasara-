@@ -1,11 +1,11 @@
 export const socialLinks = [
   {
     label: 'GitHub',
-    href: 'https://github.com/samansunasara',
+    href: 'https://github.com/Saman-Sunasara',
   },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/saman-sunasara/',
+    href: 'https://www.linkedin.com/in/saman-sunasara-59072228b/',
   },
 ]
 

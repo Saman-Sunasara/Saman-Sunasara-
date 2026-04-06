@@ -1,10 +1,9 @@
-import { lazy, Suspense } from 'react'
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Sparkles } from 'lucide-react'
 import { socialLinks } from '../data/portfolio'
+import { HeroShowcase } from './HeroShowcase'
 
 const titleWords = ['Intelligent', 'Immersive', 'High-Impact']
-const HeroCanvas = lazy(() => import('./HeroCanvas').then((module) => ({ default: module.HeroCanvas })))
 
 export function Hero() {
   return (
@@ -48,8 +47,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.25 }}
             className="mt-8 max-w-2xl rounded-[1.75rem] border border-white/10 bg-white/5 p-5 text-sm leading-7 text-slate-300 shadow-glass backdrop-blur-2xl"
           >
-            I build interfaces that feel cinematic, intelligent systems that feel useful, and products that
-            feel ready for the real world.
+            I build interfaces that feel cinematic, intelligent systems that feel useful, and products that feel ready for the real world.
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -64,10 +62,10 @@ export function Hero() {
               Explore Work
             </a>
             <a
-              href="#chat"
+              href="#contact"
               className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold uppercase tracking-[0.28em] text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] transition duration-300 hover:-translate-y-0.5 hover:border-accent/40 hover:bg-white/10"
             >
-              Ask AI About My Resume
+              Request Resume
             </a>
           </motion.div>
           <motion.div
@@ -100,13 +98,7 @@ export function Hero() {
           className="relative"
         >
           <div className="pointer-events-none absolute inset-6 rounded-[2rem] bg-[radial-gradient(circle,rgba(105,240,255,0.14),transparent_62%)] blur-3xl" />
-          <Suspense
-            fallback={
-              <div className="h-[360px] w-full rounded-[2rem] border border-white/10 bg-white/5 shadow-neon backdrop-blur-2xl sm:h-[480px]" />
-            }
-          >
-            <HeroCanvas />
-          </Suspense>
+          <HeroShowcase />
         </motion.div>
       </div>
     </section>
