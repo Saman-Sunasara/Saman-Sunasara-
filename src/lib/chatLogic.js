@@ -12,6 +12,8 @@ const knowledge = {
 }
 
 const projectDetails = {
+  'neuropath ai':
+    'NeuroPath AI is an AI Career and Study Recommender built with FastAPI, scikit-learn, SQLite, and React. It combines prediction, recommendation, resume analysis, and chatbot guidance in one workflow.',
   'federated learning system':
     'The Federated Learning System is built around privacy-aware distributed training with TensorFlow and FedAvg. It reached around 92% accuracy and shows strong understanding of secure collaborative AI.',
   'emotion detection':
@@ -62,8 +64,8 @@ export function getChatReply(userInput) {
 
   if (includesKeyword(input, keywordGroups.projects)) {
     return humanize(
-      "Saman's key projects include federated learning, emotion detection, stock prediction, and a full-stack website builder.",
-      'Together they show strength across AI systems, computer vision, forecasting, and scalable applications.',
+      "Saman's key projects include NeuroPath AI, federated learning, emotion detection, stock prediction, and a full-stack website builder.",
+      'Together they show strength across AI systems, computer vision, forecasting, scalable products, and practical full-stack execution.',
     )
   }
 

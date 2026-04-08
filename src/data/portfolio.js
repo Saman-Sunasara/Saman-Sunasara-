@@ -69,6 +69,18 @@ export const whyHireMe = [
 
 export const projects = [
   {
+    title: 'NeuroPath AI',
+    stats: 'FastAPI + ML recommender',
+    description:
+      'AI Career & Study Recommender with performance prediction, career suggestions, resume analysis, and guidance chatbot in one production-ready workflow.',
+    tech: ['FastAPI', 'Scikit-learn', 'SQLite', 'React'],
+    accent: 'from-sky-400/18 via-cyan-400/5 to-emerald-400/18',
+    previewLabel: 'Career intelligence platform',
+    previewPoints: ['Performance regression model', 'Resume keyword + similarity analysis', 'Career path and internship suggestions'],
+    result: 'Built as a full-stack AI product with clean APIs, sample data, modular services, and a unified frontend experience.',
+    codeUrl: 'https://github.com/Saman-Sunasara/NeuroPath-AI',
+  },
+  {
     title: 'Federated Learning System',
     stats: '92% accuracy',
     description:
